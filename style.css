@@ -1,47 +1,17 @@
 body {
+    background-color: var(--background-color);
     font-family: Arial, Helvetica, sans-serif;
-    background-color: rgb(203, 255, 231);
-}
-
-h1 {
-    margin-top: 150px;
-    text-align: center;
-    color: rgb(63, 95, 0);
-}
-
-div {
-    text-align: center;
-    margin: 50px auto;
-    border: 18px outset #3e9f99;
-    border-radius: 10px;
-    padding: 20px;
-    max-width: 29%;
-    background-color: rgba(114, 219, 248, 0.413);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-}
-
-table {
-    margin: auto;
-}
-
-input {
-    width: 95%;
-    height: 60px;
-    margin: 10px;
-    padding: 10px;
-    border-radius: 5px;
-    font-size:x-large;
-    text-align: right;
 }
 
 button {
-    background-color: rgba(31, 116, 169, 0.547);
-    color: black;
-    width: 120px;
-    height: 60px;
-    margin: 4px;
+    background-color: var(--button-background-color);
     border-radius: 5px;
+    color: var(--button-text-color);
+    float: left;
     font-size: x-large;
+    height: 60px;
+    margin: 2%;
+    width: 90%;
 }
 
 button:active {
@@ -49,10 +19,80 @@ button:active {
 }
 
 button:hover {
-    background-color: rgb(25, 100, 147);
-    color: white;
+    background-color: var(--button-hover-background-color);
+    color: var(--button-hover-text-color);
+}
+
+.container {
+    background-color: var(--div-background-color);
+    border: 18px outset var(--div-border-color);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin: 250px auto;
+    max-width: 35%;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    margin-top: 15px;
+    text-align: center;
+}
+
+input {
+    border-radius: 5px;
+    font-size: x-large;
+    height: 60px;
+    margin: 10px;
+    padding: 10px;
+    text-align: right;
+    width: 90%;
 }
 
 .operation {
-    width: 90px;
+    width: 160%;
+}
+
+table {
+    margin: auto;
+}
+
+td {
+    width: 31%;
+}
+
+header {
+    background-color: var(--hf-background-color);
+    width: 100%;
+    color: var(--hf-text-color);
+    text-align: center;
+    position: fixed;
+    padding: 20px 0;
+    top: 0;
+    left: 0;
+    margin: 0;
+}
+
+footer {
+    background-color: var(--hf-background-color);
+    color: var(--hf-text-color);
+    text-align: center;
+    padding: 0;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+
+:root {
+    --hf-background-color: #333;
+    --hf-text-color: white;
+    --background-color: rgb(235, 235, 235);
+    --div-background-color: rgba(189, 195, 199, 0.8);
+    --div-border-color: rgb(142, 142, 147);
+    --button-background-color: rgb(255, 149, 0);
+    --button-text-color: white;
+    --button-hover-background-color: rgb(255, 82, 0);
+    --button-hover-text-color: white;
 }
